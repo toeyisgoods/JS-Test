@@ -1,0 +1,26 @@
+// input Key & value until key = stop 
+let key = prompt("enter key: ")
+let obj = {};
+
+while (key !== "stop"){
+  let value = prompt("enter value: ");
+  obj[key] = value;
+  key = prompt("enter key: ");
+}
+
+console.log(obj)
+
+// if number of fruit > 1 put "s" in fruit's name
+let key = prompt("enter fruit's name: ");
+let obj = {};
+
+while (key !== "stop"){
+  let value = prompt(`enter number of ${key}`);
+    if (Number(value) > 1 ){
+      key = key +"s";
+  }
+  obj[key] = value;
+  key = prompt("enter fruit's name: ");
+}
+
+console.log(obj);
