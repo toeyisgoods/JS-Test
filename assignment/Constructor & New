@@ -19,3 +19,17 @@ calculator.read();
 calculator.sum();
 
 calculator.mul();
+-------------------------------------------------
+function Accumulator(staringValue){
+  this.value = staringValue;
+  this.read = function(){
+    let temp = prompt("Enter Number ");
+    this.value += Number(temp);
+  }
+}
+
+let accumulator = new Accumulator(12);
+
+accumulator.read()
+
+accumulator.value()
